@@ -1,0 +1,190 @@
+main {
+    width: 750px;
+    box-shadow: 2px 10px 7px 5px rgb(137, 137, 137,0.4);
+    margin-left: 25%;
+    margin-top: 60px;
+  }
+  /* modified */
+  main, .main-img {
+    height: 660px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-img {
+    width: 280px;
+  }
+  .inscription-div {
+    width: 100%;
+    margin-left: 20px;
+  }
+  .brand-logo {
+    margin-left: 50px;
+    width: 130px;
+    margin-bottom: 0;
+  }
+  
+  h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    text-align: center;
+    
+  }
+  .head-paragraph {
+    margin-top: 0;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: grey;
+    font-weight: 500;
+    margin-bottom: 17px;
+  
+  }
+  /* modified */
+  .div {
+    display: flex;
+    align-items: center; 
+    flex-wrap: wrap; /* Allows error messages to go below the input */
+    margin-bottom: 15px;
+  }
+  /* added */
+  .div span:not(#toggleMdp) {
+    font-size: 15px;
+    margin-top: 1px; 
+    margin-left: 160px;
+    min-height: 16px; 
+  }
+  
+  label {
+   width: 150px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 5px;
+    padding-right: -10px;
+   color:rgba(40, 40, 40, 0.91) ; 
+   margin-top: 3px;
+  }
+  
+  input {
+    width: 200px;
+    height: 25px;
+    border-radius: 7px;
+    border: 1px solid rgba(103, 103, 103, 0.6);
+    padding-left: 10px;
+  }
+  input:focus {
+    outline: none;
+    border: 2px solid rgba(103, 103, 103, 0.6);
+    background-color: rgb(97, 158, 236, 0.1) ;
+  }
+  #toggleMdp.material-icons {
+    margin-right: 5px;
+    margin-left: -25px;
+    font-size: 15px;
+    cursor: grab;
+  }
+  
+  .button{
+    margin-top: 20px;
+    margin-left: 90px;
+    height: 40px;
+    background-color: rgba(31, 118, 250, 0.9);
+    margin-left: 40%;
+    width: 150px;
+    color: aliceblue;
+    font-size: 14px;
+    transition: background-color 1s;
+  }
+  .button:hover {
+    background-color: rgb(0, 102, 255,1);
+  }
+  /* added */
+  span:not(#toggleMdp) {
+    color: red;
+  }
+  
+  @media (max-width:600px) {
+    main {
+        width: 400px;
+        box-shadow: 2px 10px 7px 5px rgb(137, 137, 137,0.4);
+        height: 860px;
+        margin-left: 10%;
+        margin-top: 15px;
+        
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        
+    }
+    .main-img {
+        width: 100%;
+        height: 175px;
+    }
+    .brand-logo {
+      margin-left: -5px;
+      margin-top: -3px;
+        width: 130px;
+        margin-bottom: 0;
+    }
+    .inscription-div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .div {
+      flex-direction: column; /* Stacks label, input, and error message vertically */
+      align-items: flex-start; /* Aligns everything to the left */
+    }
+  
+    .div span:not(#toggleMdp) {
+      margin-left: 0; /* Removes extra spacing since it's already below */
+    }
+      h2 {
+        margin-top: -25px;
+        text-align: center;
+        margin-bottom: -1px;
+        
+      }
+      label {
+        margin-top: -12px;
+        width: 250px;
+         font-size: 17px;
+         font-weight: 400;
+        color:rgba(40, 40, 40, 0.91) ; 
+        margin-bottom: 2px;
+        text-align: center;
+       }
+       input {
+        padding-top: 8px;
+        padding-bottom:8px;
+       }
+       #toggleMdp.material-icons {
+      
+        margin-top: -25px;
+        margin-left: 165px;
+        font-size: 15px;
+        cursor: grab;
+      }
+      
+   #error-email {
+        margin-top: 1px;
+      }
+      #error-mdp , #error-confirmmdp {
+        margin-top: 10px;
+      }
+      .button{
+        margin-top: -50px;
+        height: 40px;
+        background-color: rgba(31, 118, 250, 0.9);
+        margin-left: 28%;
+        width: 150px;
+        
+      }
+  }
+  

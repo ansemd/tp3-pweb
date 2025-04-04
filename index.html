@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="icon" type="image/x-icon" href="images/istockphoto-1317041449-2048x2048.jpeg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <script src="validation.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="img-div">
+                <img class="main-img"   src="images/4396ac48f8c94c5f39b725ed7d750b2f.jpg" alt="">
+            </div>
+        <div class="inscription-div">
+        <img class="brand-logo" src="images/1715127850-insidebox 1-01.webp" alt="">
+        <h2>sign up to InsideBox</h2>
+        <p class="head-paragraph">Formulaire d'inscription</p>
+        <form id="form">
+              
+                   <div class="div">
+                    <label for="nom-input">Nom :</label>
+                    <input  name="nom" id="nom"  type="text" placeholder="entrer votre nom" > 
+                    <span id="error-name">*</span>
+                   </div>
+
+                   <div class="div">
+                    <label for="prenom-input">Prenom :</label>
+                    <input  name="prenom" id="prenom"  type="text" placeholder="entrer votre prenom">
+                    <span id="error-prenom" name="prenom"></span> 
+                   </div>
+
+
+                   <div class="div">
+                    <label for="email-input">Email :</label>
+                    <input  name="email" id="email"  type="text" placeholder="exemple@gmail.com"> 
+                    <span id="error-email">*</span>
+                   </div>
+
+                   <div class="div">
+                    <label for="age-input">Age :</label>
+                    <input  name="age" id="age"  type="text" placeholder="entrer votre age"> 
+                    <span id="error-age"></span>
+                   </div>
+                
+                  <div class="div">
+                    <label  for="password-input">mot de passe :</label>
+                    <input name="mdp" id="mdp" placeholder="entrer un mot de passe" type="password">
+                    <span class="material-icons" id="toggleMdp">visibility_off</span>
+                    <span id="error-mdp">*</span>
+                </div>
+                <div class="div">
+                    <label  for="password-input">Confirmation du mot de passe :</label>
+                    <input name="confirmmdp" id="confirmmdp" placeholder="confirmer le mot de passe" type="password">
+                    <span class="material-icons" id="toggleMdp">visibility_off</span>
+                    <span id="error-confirmmdp">*</span><br>
+                </div>
+                
+                <input class="button" type="submit" value="s'inscrire" >
+                
+        </div>
+
+        </div>
+    </form>
+    </main>
+</body>
+</html>
